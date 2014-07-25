@@ -1353,13 +1353,13 @@ body {
 }
 a {
   text-decoration: none;
-  color: #364451;
+  color: #3d5778;
 }
 a.secondary {
-  color: #1c2733;
+  color: #b79255;
 }
 a.secondary:hover {
-  color: #131a23;
+  color: #4f3100;
 }
 a.muted {
   color: #222222;
@@ -1372,7 +1372,7 @@ a.no-underline:hover {
 }
 a:hover {
   text-decoration: underline;
-  color: #2c3742;
+  color: #031834;
 }
 h1,
 h2,
@@ -1383,7 +1383,7 @@ h6 {
   margin: 0.75em 0;
   line-height: 1.5em;
   font-weight: bold;
-  color: #364451;
+  color: #3d5778;
   text-rendering: optimizelegibility;
   font-family: Georgia, serif;
 }
@@ -1473,7 +1473,7 @@ hr {
   clear: both;
 }
 hr.hr-highlight {
-  border-top: 1px solid #364451;
+  border-top: 1px solid #3d5778;
 }
 hr.hr-dark {
   border-top: 1px solid #222222;
@@ -1731,7 +1731,7 @@ a img.aligncenter {
 .feed-item {
   padding-right: .75em;
   padding-bottom: 1em;
-  border-bottom: 3px solid #364451;
+  border-bottom: 3px solid #3d5778;
 }
 .feed-item .feed-thumb {
   float: left;
@@ -1791,19 +1791,19 @@ a img.aligncenter {
   padding: .25em .75em;
 }
 .button.secondary {
-  background: #1c2733;
+  background: #b79255;
   color: #ffffff;
 }
 .button.secondary:hover {
-  background: #131a23;
+  background: #4f3100;
   color: #ffffff;
 }
 .button.main {
   color: #ffffff;
-  background: #364451;
+  background: #3d5778;
 }
 .button.main:hover {
-  background: #2c3742;
+  background: #031834;
 }
 .button:hover {
   text-decoration: none;

@@ -27,9 +27,9 @@
 </head>
 <body <?php body_class();?>>
 
-<header class="nav-container nav-main nav-right">
+<header class="nav-container nav-white nav-right nav-additions">
     <div class="nav">
-        <a href="<?php echo home_url(); ?>" class="nav-title emboss"><?php bloginfo('name'); ?></a>
-        <?php wp_nav_menu( array('theme_location' => 'main-menu', 'depth' => 2, 'container' => false)); ?>
+      <a href="<?php echo home_url(); ?>" class="nav-title "><img src="<?php echo $templateUri;?>/images/logo.png"></a>
+      <?php wp_nav_menu( array('theme_location' => 'main-menu', 'depth' => 2, 'container' => false)); ?>
     </div>
 </header>

@@ -1,0 +1,45 @@
+/**
+ * Various additions to the nav styling
+ */
+
+.nav-additions {
+  .nav-title {
+    display: inline-block;
+    position: absolute;
+
+    img {
+      max-height: 100%;
+      padding: 5px;
+    }
+  }
+
+  ul {
+    float: right;
+  }
+
+  border: 1px solid @base-light-grey;
+  position: fixed;
+  top: 2em;
+  width: 100%;
+  z-index:999;
+  height: 3em;
+}
+
+.nav-container .nav ul li {
+  a {
+    line-height: 2em;
+    margin-top: .75em;
+    font-size: .9em;
+
+    &:hover {
+      background: rgba(0,0,0, 0.05);
+      border-radius: 3px;
+      box-shadow: 0 0 0 ;
+      color: #000;
+    }
+  }
+}
+
+#main-content {
+  margin-top: 3em;
+}
