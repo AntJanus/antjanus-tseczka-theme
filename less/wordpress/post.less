@@ -7,3 +7,49 @@
     }
 }
 
+.single{
+   .entry-title {
+     font-size: 2.5em;
+     margin-top: .25em;
+     margin-bottom: .25em;
+  }
+
+  article {
+    p {
+    }
+    img {
+      height: auto;
+    }
+  }
+
+}
+
+.featured {
+  text-align: center;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 3em;
+
+  img {
+
+  }
+
+}
+
+.featured + .container article p:first-child img {
+  display: none;
+}
+
+.featured + .container #main-content{
+  margin-top: 0;
+}
+
+.entry-title small {
+  font-size: .8em;
+  color: @base-very-light-grey;
+  .animate-all;
+}
+
+.entry-title:hover small {
+  color: @base-grey;
+}

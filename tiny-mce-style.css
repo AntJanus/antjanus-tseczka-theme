@@ -41,26 +41,6 @@ Tiny-MCE stylesheet
  * -------------
  * Borrowed from Foundation
  */
-body {
-  margin: 0;
-}
-.left {
-  float: left !important;
-}
-.right {
-  float: right !important;
-}
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
 .row {
   width: 100%;
   margin-left: auto;
@@ -1625,6 +1605,37 @@ a img.aligncenter {
 }
 .entry-title a {
   color: #222222;
+}
+.single .entry-title {
+  font-size: 2.5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+.single article img {
+  height: auto;
+}
+.featured {
+  text-align: center;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 3em;
+}
+.featured + .container article p:first-child img {
+  display: none;
+}
+.featured + .container #main-content {
+  margin-top: 0;
+}
+.entry-title small {
+  font-size: .8em;
+  color: #d8d9da;
+  -webkit-transition: 0.25s ease-out all;
+  -moz-transition: 0.25s ease-out all;
+  -o-transition: 0.25s ease-out all;
+  transition: 0.25s ease-out all;
+}
+.entry-title:hover small {
+  color: #58595b;
 }
 /************************* COLUMNS
 **********************************************/

@@ -1,9 +1,9 @@
 <?php get_header();?>
-
+<div class="container">
 <section id="main-content" class="row">
-  <section id="content-posts" class="large-8 columns feed-list">
+  <section id="content-posts" class="col-8 feed-list">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <article id="post-<?php the_ID();?>" <?php post_class('post single feed-item');?> itemscope itemtype="http://schema.org/Article">
+      <article id="post-<?php the_ID();?>" <?php post_class('post feed-item');?> itemscope itemtype="http://schema.org/Article">
         <h2 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h2>
 
         <ul class="list-meta author vcard" itemscope itemtype="http://schema.org/Person" itemprop="author">

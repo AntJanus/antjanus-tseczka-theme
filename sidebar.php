@@ -3,7 +3,7 @@
     $sidebar_id = get_post_meta($id, '_cmb_sidebar_switcher', true);
 
 ?>
-<aside id="sidebar" class="large-4 columns"><!-- START SIDEBAR -->
+<aside id="sidebar" class="col-4 last"><!-- START SIDEBAR -->
     <div id="inner-side">
         <?php
         if(!empty($sidebar_id)) :
