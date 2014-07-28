@@ -3,6 +3,6 @@
   "version": "3.0.0",
   "dependencies": {
     "google-code-prettify": "1.0.x",
-    "tseczka-CSS-framework": "x"
+    "tseczka-CSS-framework": "0.1.1"
   }
 }

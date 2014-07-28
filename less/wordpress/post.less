@@ -26,12 +26,13 @@
 
 .featured {
   text-align: center;
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   margin-top: 3em;
 
   img {
-
+    height: auto;
+    max-height: auto;
   }
 
 }
@@ -52,4 +53,23 @@
 
 .entry-title:hover small {
   color: @base-grey;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 600px) {
+  .container #main-content{
+    margin-top: 0;
+  }
+
+  .featured {
+    height: auto;
+    margin-top: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+
+  }
 }

@@ -22,10 +22,8 @@ Tiny-MCE stylesheet
   width: 100%;
 }
 .animate-all {
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
 }
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
@@ -1616,9 +1614,13 @@ a img.aligncenter {
 }
 .featured {
   text-align: center;
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   margin-top: 3em;
+}
+.featured img {
+  height: auto;
+  max-height: auto;
 }
 .featured + .container article p:first-child img {
   display: none;
@@ -1629,13 +1631,26 @@ a img.aligncenter {
 .entry-title small {
   font-size: .8em;
   color: #d8d9da;
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
 }
 .entry-title:hover small {
   color: #58595b;
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 600px) {
+  .container #main-content {
+    margin-top: 0;
+  }
+  .featured {
+    height: auto;
+    margin-top: 0;
+  }
+  .featured img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
 }
 /************************* COLUMNS
 **********************************************/
@@ -1821,10 +1836,8 @@ a img.aligncenter {
   color: #ffffff;
   background: #222222;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
 }
 .button.block {

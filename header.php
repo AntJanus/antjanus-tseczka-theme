@@ -8,6 +8,8 @@
 </title>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width" />
+
 
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
