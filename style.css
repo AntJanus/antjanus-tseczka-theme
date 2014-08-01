@@ -55,8 +55,8 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
 .pull-right {
   float: right;
 }
-.animate-menu {
-  transition: 1s linear all;
+.animate-simple {
+  transition: 0.5s ease-in all;
 }
 .container {
   max-width: 62.5em;
@@ -766,8 +766,7 @@ a img.aligncenter {
 .entry-title small {
   font-size: .8em;
   color: #d8d9da;
-  transition: all 1.4s linear;
-  transition-property: opacity, height, margin;
+  transition: 0.5s ease-in all;
 }
 .entry-title:hover small {
   color: #58595b;
@@ -1013,16 +1012,17 @@ a img.aligncenter {
   line-height: 2em;
   margin-top: .6em;
   font-size: .9em;
-  transition: 1s linear all;
+  transition: 0.5s ease-in all;
 }
 .nav-container .nav ul li a:hover {
+  transition: 0.5s ease-in all;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
   box-shadow: 0 0 0 ;
   color: #000;
 }
 #main-content {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 600px) {

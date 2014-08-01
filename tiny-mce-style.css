@@ -1576,6 +1576,9 @@ a img.aligncenter {
 .gallery-caption {
   /* if necessary, add code here */
 }
+.animate-simple {
+  transition: 0.5s ease-in all;
+}
 /* COMMENTS */
 .comments-template {
   margin: 10px 0 0;
@@ -1631,8 +1634,7 @@ a img.aligncenter {
 .entry-title small {
   font-size: .8em;
   color: #d8d9da;
-  transition: all 1.4s linear;
-  transition-property: opacity, height, margin;
+  transition: 0.5s ease-in all;
 }
 .entry-title:hover small {
   color: #58595b;
