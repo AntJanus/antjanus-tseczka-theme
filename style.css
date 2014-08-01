@@ -993,7 +993,7 @@ a img.aligncenter {
 .nav-additions {
   border: 1px solid #98999b;
   position: fixed;
-  top: 2em;
+  top: 0;
   width: 100%;
   z-index: 999;
   height: 3em;
@@ -1028,13 +1028,13 @@ a img.aligncenter {
 @media only screen and (max-width: 600px) {
   .nav-additions {
     height: auto;
-    position: initial;
+    position: static;
   }
   .nav-additions .nav {
     height: auto;
   }
   .nav-additions .nav-title {
-    position: initial;
+    position: static;
     display: block;
   }
   .nav-additions ul {
