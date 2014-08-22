@@ -4,17 +4,10 @@
 
 .nav-additions {
   .nav-title {
-    display: inline-block;
-    position: absolute;
-
     img {
       max-height: 100%;
       padding: 5px;
     }
-  }
-
-  ul {
-    float: right;
   }
 
   border: 1px solid @base-light-grey;
@@ -46,29 +39,10 @@
   margin-top: 3em;
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .nav-additions {
     height: auto;
     position: static;
-
-    .nav {
-      height: auto;
-    }
-
-    .nav-title {
-      position: static;
-      display: block;
-    }
-
-    ul {
-      float: none;
-      display: block;
-
-      li {
-        display: block;
-      }
-    }
   }
 
 }
