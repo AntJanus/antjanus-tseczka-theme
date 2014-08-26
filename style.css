@@ -794,11 +794,30 @@ a img.aligncenter {
 }
 .entry-title small {
   font-size: .8em;
-  color: #fafafa;
+  color: #b1b2b4;
   transition: 0.5s ease-in all;
 }
 .entry-title:hover small {
   color: #58595b;
+}
+.button.read-time-button {
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.button.read-time-button:hover .read-time {
+  background: #58595b;
+  box-shadow: 0 0 0 #58595b;
+  transition: all 1.4s linear;
+}
+.read-time {
+  display: inline-block;
+  background: #b1b2b4;
+  padding: 3px 5px;
+  margin-left: 10px;
+  font-size: .9em;
+  box-shadow: 2px 0 1px #888 inset;
+  border-right: 1px solid #aeaeae;
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 600px) {

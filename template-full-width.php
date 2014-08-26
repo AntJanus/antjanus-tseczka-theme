@@ -6,7 +6,7 @@ Template Name: Full Width Template
 <?php get_header();?>
 
 <section id="main-content" class="row">
-  <section id="content-posts" class="large-12 columns">
+  <section id="content-posts" class="col-12 last">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article id="post-<?php the_ID();?>" <?php post_class('post single');?> itemscope itemtype="http://schema.org/Article">
         <h1 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h1>

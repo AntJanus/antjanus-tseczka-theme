@@ -7,7 +7,6 @@
           <h2 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h2>
 
           <ul class="list-meta author vcard" itemscope itemtype="http://schema.org/Person" itemprop="author">
-            <li><time itemprop="datePublished" class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></li>
             <li>Author: <span itemprop="name"> <?php the_author_posts_link(); ?></span></li>
             <li>Categories: <?php the_category(', '); ?></li>
           </ul>

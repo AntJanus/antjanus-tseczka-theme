@@ -9,10 +9,11 @@
 <?php } ?>
 <div class="container">
   <section id="main-content" class="row">
-    <h1 class="entry-title item fn"><?php the_title(); ?> <small><time itemprop="datePublished" class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></small></h1>
+  <h1 class="entry-title item fn"><?php the_title(); ?> <small><?php $content = get_the_content(); echo readTime($content); ?> to read</small></h1>
     <section id="content-meta" class="col-2">
           <ul class="list-meta author vcard" itemscope itemtype="http://schema.org/Person" itemprop="author">
             <li><strong>by: <span itemprop="name"> <?php the_author_posts_link(); ?></span></strong></li>
+            <li>Date: <time itemprop="datePublished" class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></li>
             <li>Categories: <?php the_category(', '); ?></li>
           </ul>
     </section>

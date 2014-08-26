@@ -35,6 +35,9 @@ include('functions/sidebars.php');
 //roots extras
 include('functions/roots-extras.php');
 
+//utils
+include('functions/utils.php');
+
 //menu
 register_nav_menus(
 		array(
@@ -77,7 +80,8 @@ add_theme_support('custom-background');
 // Exceprts
 function excerpt_read_more_link($output) {
  global $post;
- return $output . '<a href="'. get_permalink($post->ID) . '" class="button main feed-more">Read More</a>';
+ $read = readTime(get_the_content($post->ID), true);
+ return $output . '<a href="'. get_permalink($post->ID) . '" class="button main feed-more read-time-button">Read More<span class="read-time">'. $read.'</span></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
