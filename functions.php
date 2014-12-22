@@ -17,6 +17,10 @@ function load_scripts() {
   wp_enqueue_script('prettifyJS', ASSETS.'google-code-prettify/src/prettify.js', false, null, 'all');
   wp_enqueue_style('prettifyCSS', ASSETS.'google-code-prettify/src/prettify.css', false, null, 'all');
   wp_enqueue_script('mainScript', JS_DIR.'/main.js', array('prettifyJS', 'jquery'), null, 'all');
+
+  //remote links
+  wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, null, 'all');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'load_scripts');

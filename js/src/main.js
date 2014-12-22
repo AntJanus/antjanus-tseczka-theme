@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){prettyPrint()});
+jQuery(document).ready(function(a){prettyPrint();var e=a(".nav-search form");a(".nav-search a").click(function(a){e.hasClass("active")?e.removeClass("active"):e.addClass("active"),a.preventDefault()})});
