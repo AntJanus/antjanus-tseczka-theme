@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){prettyPrint()});
+function ready(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)}function toggleClass(e,t){if(e.classList)e.classList.toggle(t);else{var a=e.className.split(" "),n=a.indexOf(t);n>=0?a.splice(n,1):a.push(t),e.className=a.join(" ")}}ready(function(){prettyPrint();var e=document.querySelector(".nav-search form");document.querySelector(".nav-search a").addEventListener("click",function(t){toggleClass(e,"active"),t.preventDefault()})});

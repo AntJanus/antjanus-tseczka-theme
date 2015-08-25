@@ -1,5 +1,16 @@
 //temporary workaround
 .animate-simple {
-  transition: .5s ease-in all;
+  transition: 200ms ease-in-out all;
 }
 
+.animate-simple-function(@duration) {
+  transition: @duration ease-in-out all;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}

@@ -18,6 +18,9 @@ Theme URI: http://antjanus.com
 Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-post, microformats
 
 */
+#wpadminbar {
+  display: none;
+}
 /**
  *
  * Tseczka Framework
@@ -55,7 +58,13 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
   float: right;
 }
 .animate-simple {
-  transition: 0.5s ease-in all;
+  transition: 200ms ease-in-out all;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
 }
 .container {
   max-width: 62.5em;
@@ -795,7 +804,7 @@ a img.aligncenter {
 .entry-title small {
   font-size: .8em;
   color: #b1b2b4;
-  transition: 0.5s ease-in all;
+  transition: 200ms ease-in-out all;
 }
 .entry-title:hover small {
   color: #58595b;
@@ -804,11 +813,11 @@ a img.aligncenter {
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
+  transition: 300ms ease-in-out all;
 }
 .button.read-time-button:hover .read-time {
   background: #58595b;
   box-shadow: 0 0 0 #58595b;
-  transition: all 1.4s linear;
 }
 .read-time {
   display: inline-block;
@@ -818,6 +827,7 @@ a img.aligncenter {
   font-size: .9em;
   box-shadow: 2px 0 1px #888 inset;
   border-right: 1px solid #aeaeae;
+  transition: 300ms ease-in-out all;
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 600px) {
@@ -1052,14 +1062,49 @@ a img.aligncenter {
   line-height: 2em;
   margin-top: .6em;
   font-size: .9em;
-  transition: 0.5s ease-in all;
+  transition: 200ms ease-in-out all;
 }
 .nav-container .nav ul li a:hover {
-  transition: 0.5s ease-in all;
+  transition: 200ms ease-in-out all;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
   box-shadow: 0 0 0 ;
   color: #000;
+}
+.nav-container .fa {
+  font-size: 1.75em;
+  margin-top: 3px;
+}
+.nav-search {
+  font-size: .9em;
+  float: right;
+  line-height: 2em;
+  margin-top: .5em;
+  margin-left: 15px;
+}
+.nav-search a {
+  transition: 200ms ease-in-out all;
+}
+.nav-search a:hover {
+  text-decoration: none;
+}
+.nav-search .fa {
+  margin-top: 4px;
+}
+.nav-search form {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  width: 0;
+  opacity: 0;
+  transition: 200ms ease-in-out all;
+}
+.nav-search form.active {
+  width: 200px;
+  opacity: 1;
+}
+.nav-search form input {
+  padding: 2px 5px;
+  width: 100%;
 }
 #main-content {
   margin-top: 3em;
@@ -1068,5 +1113,14 @@ a img.aligncenter {
   .nav-additions {
     height: auto;
     position: static;
+  }
+  .nav-search {
+    display: block;
+    float: none;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .nav ul {
+    clear: none;
   }
 }

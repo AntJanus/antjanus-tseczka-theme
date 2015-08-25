@@ -22,6 +22,6 @@ gulp.task('styles', function() {
 });
 
 gulp.task('default', ['scripts', 'styles'], function(){
-  gulp.watch('./js/dev/**/*.js', ['jshint', 'scripts']);
+  gulp.watch('./js/dev/**/*.js', ['scripts']);
   gulp.watch('./less/**/*.less', ['styles']);
 });
