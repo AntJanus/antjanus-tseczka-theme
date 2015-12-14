@@ -23,7 +23,7 @@ function load_scripts() {
   wp_enqueue_script('mainScript', JS_DIR.'/main.js', array('prettifyJS'), null, 'all');
 
   //remote links
-  wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, null, 'all');
+  wp_enqueue_style('fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', false, null, 'all');
 
 }
 
